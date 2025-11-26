@@ -187,7 +187,7 @@ curl -X POST "http://127.0.0.1:8000/recommend" \
 
 ### Testing the API
 
-1. Start the server: cd case 3 -> `uvicorn main:app --reload --port 8000`
+1. Start the server: `cd case 3` -> `uvicorn main:app --reload --port 8000`
 2. Open browser to: `http://127.0.0.1:8000/docs`
 3. Use the interactive interface to test the `/recommend` endpoint
 4. Verify you get a response like: `{"recommended_department":"Neurology"}`
