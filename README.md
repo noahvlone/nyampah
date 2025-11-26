@@ -110,7 +110,7 @@ curl -X POST "http://127.0.0.1:8000/recommend" \
 **Request Body:**
 ```json
 {
-  "gender": "string",  // "male" or "female"
+  "gender": "female",  // "male" or "female"
   "age": 62,           // patient age in years
   "symptoms": [        // list of symptoms
     "pusing",
@@ -141,13 +141,13 @@ The system can recommend various departments including:
 ## Project Structure
 
 ```
-hospital-triage-system/
-├── main.py                 # FastAPI application
-├── requirements.txt        # Python dependencies
-├── .env                   # Environment variables (create this)
-├── Screenshot 2025-11-26 210501.png  # API docs screenshot
-├── Screenshot 2025-11-26 210622.png  # API response screenshot
-└── README.md             # This file
+submission bithealth/
+├── main.py                 
+├── requirements.txt        
+├── .env                   
+├── Screenshot 2025-11-26 210501.png 
+├── Screenshot 2025-11-26 210622.png 
+└── README.md             
 ```
 
 ## Example Use Cases
@@ -191,12 +191,4 @@ curl -X POST "http://127.0.0.1:8000/recommend" \
 2. Open browser to: `http://127.0.0.1:8000/docs`
 3. Use the interactive interface to test the `/recommend` endpoint
 4. Verify you get a response like: `{"recommended_department":"Neurology"}`
-
-## Development
-
-To extend this application:
-
-1. Add new departments in the prompt template in `main.py`
-2. Modify the request model to include additional patient information
-3. Enhance error handling for specific edge cases
 
